@@ -17,3 +17,7 @@ function setBodyBackground(){
     document.body.style.backgroundColor = "rgb(" + halfcols[0] + ", " + halfcols[1] + ", " + halfcols[2] + ")";
 
 }
+
+function printResume(){
+    
+}

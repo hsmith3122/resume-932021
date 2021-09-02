@@ -122,7 +122,11 @@ div#main .underline{
     position: relative;
     padding: 3%;
     margin-top: 5%;
-    top: 50px;
+    top: 75px;
+}
+
+.personality > .sectiontitle{
+    margin-bottom: 50px;
 }
 
 .project{
@@ -312,6 +316,9 @@ div.contactitem > a {
     width:  24px;
 }
 
+.courses{
+    opacity: 0.4;
+}
 
 .courses h4{
     margin-top: 2%;
@@ -330,7 +337,7 @@ div.contactitem > a {
 
 .prodwcsstag{
     position: relative;
-    top: 100px;
+    top: 120px;
     left: 80px;
     
     color: rgba(0, 0, 0, 0.2);
