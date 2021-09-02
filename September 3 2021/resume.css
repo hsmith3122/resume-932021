@@ -1,0 +1,343 @@
+body{
+    margin: auto;
+    width: 8.5in;
+    height: 11in;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+div#sidebar{
+    width: 33%;
+    height: 100%;
+    float: left;
+    background-color: #226;
+}
+
+
+.pfinfo{
+    background-color: rgba(0,0,0,0.2);
+}
+
+div#main{
+    float: left;
+    width: 66%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.pfp{
+    width: 150px;
+    height: 150px;
+    margin: 10% 20% -5% 20% ;
+    border-radius: 100px;
+    border: 2px solid black;
+    display: inline-block;
+
+    object-fit: cover;
+}
+
+.name {
+    width: 100%;
+    margin-top: 1%;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.title {
+    width: 100%;
+    margin-top: -5%;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+}
+.underline{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.topskills {
+    position: relative;
+    left: 10%;
+    margin-top: 4%;
+    width: 100%;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+}
+
+.skillsheader{
+    font-size: 28px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+div#sidebar > p.heading{
+    color: white;
+    width: 100%;
+    margin-top: -10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: -20px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+div#sidebar > p.heading > .underline{
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.introduction{
+    float:top;
+    padding: 3% 3% 1% 3%;
+    max-height: 220px;
+}
+
+.sectiontitle{
+    font-size: 24px;
+    color: rgba(62, 122, 200, 1);
+}
+
+div#main .underline{
+    background-color: gray;
+}
+
+.projects{
+    padding:3%;
+    margin-top: -5%;
+}
+
+.education{
+    padding:3%;
+    margin-top: -5%;
+}
+
+.personality{
+    position: relative;
+    padding: 3%;
+    margin-top: 5%;
+    top: 50px;
+}
+
+.project{
+    position: relative;
+    bottom: 12px;
+}
+
+
+.projecttime{
+    color:rgba(0, 0, 0, 0.4);
+    margin-top: -15px;
+}
+
+.projecttitle{
+    position: relative;
+    bottom:    12px;
+    font-size: 20px;
+    animation-duration: 1s;
+    animation-name: projectcolorfadeout;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+}
+
+.projecttitle:hover{
+    animation-duration: 1s;
+    animation-name: projectcolorfadein;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+.projectdesc{
+    margin-top: -3%;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.projectkptitle{
+    padding-left: 8%;
+    font-weight: bold;
+}
+
+.projectkeyskillslist{
+    margin-top:3%;
+    width: 20%;
+    float: left;
+}
+
+.projectkeyskills{
+    position: relative;
+    bottom: 25px;
+    margin-bottom: -5%;
+    color: rgba(62, 122, 200, 1);
+}
+
+.projectkeyskill{
+    color: #000;
+    color: rgba(0, 0, 0, 0.5);
+
+    position: relative;
+    bottom: 30px;
+
+    font-size: 10pt;
+    font-family: Arial, sans-serif;
+    margin-bottom: -15%;
+}
+.projectitem{
+    margin-top:3%;
+    width: 80%;
+    float: left;
+}
+
+@keyframes projectcolorfadein{
+    from{
+        color: black;
+    }
+    to{
+        color: lightblue;
+    }
+}
+
+@keyframes projectcolorfadeout{
+    from{
+        color: lightblue;
+    }
+    to{
+        color: black;
+    }
+}
+
+div.skillcont h3{
+    width:80%;
+    margin-bottom: -2%;
+    margin: 0 auto;
+    margin-top: 0%;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+div.prgcont{
+    width:80%;
+    height:10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+  }
+  
+div.prgcont div.prg{
+    width: var(--width);
+    height: 10px;
+    background-color: #8fa;
+    border-radius: 50px;
+    margin: auto 0;
+}
+
+div.prgsubskill{
+    width: 80%;
+    margin: 0 auto;
+}
+
+div.prgsubskillname {
+    display: inline-block;
+}
+
+div.prgsubskillbar {
+    display: inline-block;
+    width: 65%;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-left: 2%;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+div.prgsubskillbar .prg {
+    width: var(--width);
+    height: 5px;
+    background-color: #8fa;
+    border-radius: 50px;
+    margin: auto 0;
+}
+.prgsubskillname{
+    width:30%;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 12px;
+}
+
+
+div.prgcont p{
+    font-size: 14px;
+    color: white;
+}
+
+div.contactscont{
+    width:80%;
+    margin: 0 auto;
+}
+
+div.contactitem > div.contacttitle > *{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: -10px;
+}
+
+div.contactitem > div.contacttitle > img{
+    position: relative;
+    top: -4px;
+    height: 24px;
+    width: 24px;
+    filter: invert();
+}
+
+div.contactitem > a {
+    color: lightskyblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.projectgithub{
+    position: relative;
+    top: 5px;
+    height: 24px;
+    width:  24px;
+}
+
+
+.courses h4{
+    margin-top: 2%;
+    margin-bottom: -2%;
+}
+
+.row p {
+    display: inline-block;
+    margin-right: 4%;
+    color: rgba(0, 0, 0, 0.6);
+}
+.row {
+    margin-bottom: -5%;
+    font-weight: bold;
+}
+
+.prodwcsstag{
+    position: relative;
+    top: 100px;
+    left: 80px;
+    
+    color: rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
